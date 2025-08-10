@@ -1,0 +1,230 @@
+/* ----- MAIN CONTENT LAYOUT ----- */
+.wrapper {
+    max-width: 1200px;
+    margin: 90px auto 30px auto; /* Adjust margin for fixed header */
+    padding: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 3fr 1fr; /* Two-column layout for larger screens */
+}
+
+/* ----- MAIN BLOG POST STYLES ----- */
+.main-blog-post {
+    background-color: var(--box-bg-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.post-header {
+    margin-bottom: 2rem;
+}
+
+.post-category {
+    display: inline-block;
+    background-color: var(--text-accent-color);
+    color: var(--text-primary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.post-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--text-primary-color);
+}
+
+.post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary-color);
+}
+
+.post-meta a {
+    color: var(--text-accent-color);
+    text-decoration: none;
+}
+
+.post-meta a:hover {
+    text-decoration: underline;
+}
+
+.schematic-body p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary-color);
+}
+.youtube { 
+    background: #FF0000; 
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    gap: 10px;
+}
+.instagram { background: #E1306C;
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+.tiktok { background: #000000;
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    margin: 0.5rem 0;
+ }
+.twitter { background: #1DA1F2;
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    margin: 0.5rem 0;
+ }
+ .recent-post-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 5px;
+}
+
+.recent-post-item div {
+    flex-grow: 1; /* Allows the text div to take up remaining space */
+}
+
+.recent-post-item p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.sidebar-section.recent-posts a {
+    display: flex;
+    gap: 1rem;
+    align-items: center; /* Vertically align image and text */
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--text-primary-color);
+    transition: color 0.3s ease;
+}
+
+.sidebar-section.recent-posts a:hover {
+    color: var(--text-accent-color);
+}
+
+.sidebar-section.recent-posts img {
+    width: 60px; /* Slightly larger for better visibility */
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.sidebar-section.recent-posts div {
+    flex-grow: 1;
+}
+
+.sidebar-section.recent-posts p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* ... (rest of your sidebar CSS) ... */
+
+.sidebar-section.recent-posts a {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--text-primary-color);
+    transition: color 0.3s ease;
+}
+
+.sidebar-section.recent-posts a:hover {
+    color: var(--text-accent-color);
+}
+
+.sidebar-section.recent-posts img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.sidebar-section.recent-posts div {
+    flex-grow: 1;
+}
+
+.sidebar-section.recent-posts p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* ... (rest of your sidebar CSS) ... */
+
+.sidebar-section.recent-posts a {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--text-primary-color);
+    transition: color 0.3s ease;
+}
+
+/* New container for social buttons */
+.social-buttons-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap to the next line on smaller screens */
+    gap: 1rem;       /* Creates consistent space between buttons */
+    margin-top: 1rem;
+}
+
+/* Base styles for all social buttons */
+.social-btn {
+    display: flex;
+    align-items: center; /* Vertically centers icon and text */
+    justify-content: center; /* Horizontally centers content */
+    gap: 10px; /* Space between icon and text */
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff; /* Sets the text color to white for all buttons */
+    font-weight: 500;
+    flex-grow: 1; /* Allows buttons to grow and fill available space */
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px); /* A subtle hover animation */
+}
+/* ... (rest of your CSS code) ... */
+
+/* Main content styling for the schematic image */
+.schematic-body {
+    margin-bottom: 1.5rem; /* Add some space below the image */
+    text-align: center; /* Center the image if it's smaller than the container */
+}
+
+.schematic-body img {
+    max-width: 100%; /* Ensures the image is responsive and doesn't overflow its container */
+    height: auto;   /* Maintains the image's aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+/* Specific background colors for each social button */
+.social-btn.youtube { background: #FF0000; }
+.social-btn.instagram { background: #E1306C; }
+.social-btn.tiktok { background: #000000; }
+.social-btn.twitter { background: #1DA1F2; }
+
+/* ... (rest of your CSS code) ... */

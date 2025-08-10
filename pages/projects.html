@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="/css/project.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="shortcut icon"
+            href="/img/Gemini_Generated_Image_i0qs31i0qs31i0qs-removebg-preview.png"
+            type="image/x-icon">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet">
+        <title>Projects | Nexar|Link.</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="site-header">
+                <nav class="navbar">
+                    <a href="index.html"
+                        class="logo">Nexar|Link<span>.</span></a>
+                    <div class="nav-links" id="navMenu">
+                        <ul class="nav-list">
+                            <li><a href="#home"
+                                    class="nav-link active-link">Home</a></li>
+                            <li><a href="#about" class="nav-link">About</a></li>
+                            <li><a href="#projects"
+                                    class="nav-link">Projects</a></li>
+                            <li><a href="#contact"
+                                    class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-actions">
+                        <div class="search-container">
+                            <input type="text" class="search-input"
+                                placeholder="Search..."
+                                aria-label="Search site">
+                            <button class="search-toggle"
+                                aria-label="Toggle search bar">
+                                <i class="uil uil-search"></i>
+                            </button>
+                        </div>
+                        <button id="theme-toggle" class="theme-toggle-btn"
+                            aria-label="Toggle dark/light mode">
+                            <i class="uil uil-sun"></i>
+                        </button>
+                        <button class="menu-toggle"
+                            aria-label="Toggle navigation menu">
+                            <i class="uil uil-bars"></i>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="search-overlay" id="searchOverlay">
+                <div class="search-wrapper">
+                    <form action="#" class="search-form">
+                        <input type="text" placeholder="Search projects..."
+                            class="search-input">
+                        <i class="uil uil-times close-icon"
+                            onclick="toggleSearchBar()"></i>
+                    </form>
+                </div>
+            </div>
+
+            <main class="wrapper">
+                <section class="projects-section">
+                    <h1 class="page-title">
+                        <a href="index.html" class="breadcrumb-link">Home</a> >>
+                        Projects
+                    </h1>
+                    <div class="projects-grid">
+                        <a href="file.html" class="project-card">
+                            <div class="project-card-content">
+                                <h3 class="project-title">Temperature & Humidity</h3>
+                                <p class="project-description">Some text that
+                                    describes me lorem ipsum ipsum lorem.</p>
+                            </div>
+                            <button class="project-button">Start</button>
+                        </a>
+                        <a href="file.html" class="project-card">
+                            <div class="project-card-content">
+                                <h3 class="project-title">Smart switch with sound ensor</h3>
+                                <p class="project-description">Some text that
+                                    describes me lorem ipsum ipsum lorem.</p>
+                            </div>
+                            <span class="project-button">Start</span>
+                        </a>
+                        <a href="file.html" class="project-card">
+                            <div class="project-card-content">
+                                <h3 class="project-title">Radar Systems</h3>
+                                <p class="project-description">Some text that
+                                    describes me lorem ipsum ipsum lorem.</p>
+                            </div>
+                            <span class="project-button">Start</span>
+                        </a>
+                        <a href="file.html" class="project-card">
+                            <div class="project-card-content">
+                                <h3 class="project-title">Servo motor control</h3>
+                                <p class="project-description">Some text that
+                                    describes me lorem ipsum ipsum lorem.</p>
+                            </div>
+                            <span class="project-button">Start</span>
+                        </a>
+                        <a href="file.html" class="project-card">
+                            <div class="project-card-content">
+                                <h3 class="project-title">Calculator</h3>
+                                <p class="project-description">Some text that
+                                    describes me lorem ipsum ipsum lorem.</p>
+                            </div>
+                            <span class="project-button">Start</span>
+                        </a>
+                        <a href="file.html" class="project-card">
+                            <div class="project-card-content">
+                                <h3 class="project-title">Automatic attendanceRFID</h3>
+                                <p class="project-description">Some text that
+                                    describes me lorem ipsum ipsum lorem.</p>
+                            </div>
+                            <span class="project-button">Start</span>
+                        </a>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-brand">
+                        <a href="index.html">Nexar|Link.</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"
+                            aria-label="Instagram"><i
+                                class="uil uil-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i
+                                class="uil uil-linkedin-alt"></i></a>
+                        <a href="#" class="social-icon" aria-label="Dribbble"><i
+                                class="uil uil-dribbble"></i></a>
+                        <a href="#" class="social-icon" aria-label="GitHub"><i
+                                class="uil uil-github-alt"></i></a>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>Copyright &copy; <a href="index.html"
+                                class="copyright-link">Mbi Junior</a> - All rights
+                            reserved</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script
+            src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/project.js"></script>
+    </body>
+</html>

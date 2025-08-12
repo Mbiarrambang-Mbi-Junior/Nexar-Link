@@ -1,3 +1,19 @@
+/* ----- FONT IMPORTS ----- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://unicons.iconscout.com/release/v4.0.8/css/line.css');
+
+/* ----- VARIABLES ----- */
+:root {
+    --body-bg-color: #191854;
+    --box-bg-color: #181872;
+    --text-primary-color: #ffffff;
+    --text-secondary-color: #e0e0e0;
+    --text-accent-color: #00c896;
+    --text-highlight-color: #f39c12;
+    /* Button variables for dark mode */
+    --btn-text-color: #ffffff;
+    --btn-bg-color: #00c896;
+}
 /* ----- MAIN CONTENT LAYOUT ----- */
 .wrapper {
     max-width: 1200px;
@@ -58,9 +74,22 @@
 
 .schematic-body p {
     font-size: 1rem;
+    text-align: left;
     line-height: 1.8;
     margin-bottom: 1.5rem;
     color: var(--text-primary-color);
+}
+.schematic-body span {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.schematic-body > span > div {
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .youtube { 
     background: #FF0000; 
@@ -179,7 +208,10 @@
     color: var(--text-primary-color);
     transition: color 0.3s ease;
 }
-
+video {
+    width: 900px;
+    margin-bottom: 30px;
+}
 /* New container for social buttons */
 .social-buttons-container {
     display: flex;
@@ -219,6 +251,12 @@
     height: auto;   /* Maintains the image's aspect ratio */
     border-radius: 8px; /* Optional: adds rounded corners to the image */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+.code {
+    background-color: rgb(36, 36, 36);
+    padding: 2rem;
+    border-radius: 10px;
+    scroll-behavior: smooth;
 }
 
 /* Specific background colors for each social button */

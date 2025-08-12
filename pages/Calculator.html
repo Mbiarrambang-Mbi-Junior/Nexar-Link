@@ -72,8 +72,8 @@
                     <header class="post-header">
                         <span class="post-category">Steps/Schematics &
                             Code</span>
-                        <h1 class="post-title">Modern Login Form using only HTML
-                            and CSS — Google Like Design</h1>
+                        <h1 class="post-title">Calculator with
+                            arduino uno and metrix button</h1>
                         <div class="post-meta">
                             <span class="meta-author">By <a
                                     href="#">Nexar|Linklix</a></span>
@@ -88,46 +88,86 @@
                     <div class="post-content">
                         <div class="post-media">
                             <div class="video-container">
-                                <iframe
-                                    src="https://www.youtube.com/embed/VIDEO_ID"
-                                    title="Modern Login Form with HTML and CSS"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen>
-                                </iframe>
+                                <video controls src="/video/Untitled video - Made with Clipchamp.mp4">
+
+                                </video>
                             </div>
                         </div>
 
                         <div class="schematic-body">
-                            <p>In the fast-changing realm of web design, making
+                 <span><div>1</div><p>In the fast-changing realm of web design, making
                                 a login form that looks good and is easy for
-                                people to use is very important. This complete
-                                guide will help you make a modern login form
-                                using only HTML and CSS. By the time you finish
-                                this step-by-step tutorial, you'll have a nice
-                                and adaptable login form that's similar to the
-                                simple style of Google. You can follow along
-                                with this guide to make your website more
-                                user-friendly and improve your web design
-                                abilities.</p>
-                            <p>Login forms are used in most websites and
-                                applications. The login form helps the user to
-                                **get access to a website or web application
-                                they are Browse** to access their data.</p>
+                                people to use is very important.
+                                .</p>
+                                </span>
+                 <span><div>2</div><p>In the fast-changing realm of web design, making
+                                a login form that looks good and is easy for
+                                people to use is very important.
+                                .</p>
+                                </span>
+                 <span><div>3</div><p>In the fast-changing realm of web design, making
+                                a login form that looks good and is easy for
+                                people to use is very important.
+                                .</p>
+                                </span>
+                 <span><div>4</div><p>In the fast-changing realm of web design, making
+                                a login form that looks good and is easy for
+                                people to use is very important.
+                                .</p>
+                                </span>
                         </div>
                         <div class="schematic-body">
-                            <img src="/img/Gemini_Generated_Image_i0qs31i0qs31i0qs.png"
+                            <img
+                                src="/img/Gemini_Generated_Image_i0qs31i0qs31i0qs.png"
                                 alt="Schematic diagram for the project">
                         </div>
 
                         <div class="code-container">
                             <h2>Code Snippet</h2>
                             <pre><code>
+                                <div class="code">
 &lt;section&gt;
   ...
   &lt;a href="#" class="forgot-link"&gt;Forgot password?&lt;/a&gt;
+    /*
+  Read Temperature and Humidity
+  DHT11 Library
+  Author: Bonezegei (Jofel Batutay)
+  Date : November 2023
+
+  Tested using ESP32-WROOM32
+*/
+
+#include <DHT11.h>
+
+//param = DHT11 signal pin
+DHT11 dht(5);
+
+void setup() {
+  Serial.begin(115200);
+  dht.begin();
+}
+
+void loop() {
+
+  if (dht.getData()) {                         // get All data from DHT11
+    float tempDeg = dht.getTemperature();      // return temperature in celsius
+    float tempFar = dht.getTemperature(true);  // return temperature in fahrenheit if true celsius of false
+    int hum = dht.getHumidity();               // return humidity
+    String str  = "Temperature: ";
+           str += tempDeg;
+           str += "°C  ";
+           str += tempFar;
+           str += "°F  Humidity:";
+           str += hum;
+    Serial.println(str.c_str());
+    //Serial.printf("Temperature: %0.1lf°C  %0.1lf°F Humidity:%d \n", tempDeg, tempFar, hum);
+  }
+  delay(2000);  //delay atleast 2 seconds for DHT11 to read tha data
+}
   ...
 &lt;/section&gt;
+</div>
                 </code></pre>
                         </div>
                     </div>
@@ -158,7 +198,8 @@
                             </div>
                         </a>
                         <a href="#" class="recent-post-item">
-                            <img src="/img/b38a0815-b5d1-474c-a030-484d5d8d5414.jpeg"
+                            <img
+                                src="/img/b38a0815-b5d1-474c-a030-484d5d8d5414.jpeg"
                                 alt="Post thumbnail">
                             <div>
                                 <p>Build a Seamless PHP & AJAX Login and
